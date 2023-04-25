@@ -58,7 +58,6 @@ const Card = styled.div`
   height: 400px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   border-radius: 8px;
   border: 2px solid gold;
   background-image: url(${(props) => props.bgImage});
@@ -100,7 +99,6 @@ const CardContent = styled.div`
   bottom: 0;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
   padding: 1rem;
   z-index: 2;
   opacity: 0;
@@ -137,11 +135,11 @@ const CardContent = styled.div`
 
   @media (max-width: 768px) {
     opacity: 1;
-    padding: 1.5rem; // Increase padding on smaller screens
-    justify-content: space-between; // Adjust content spacing
+    padding: 1.5rem; 
+    justify-content: space-between;
 
     &::before {
-      background: rgba(0, 0, 0, 0.8); // change to very dark overlay
+      background: rgba(0, 0, 0, 0.8); 
     }
 
     &::after {
@@ -191,7 +189,7 @@ const CardLink = styled.a`
     transform: scale(1.1);
   }
   @media (max-width: 768px) {
-    color: white; // change font color to white
+    color: white;
   }
 `;
 
