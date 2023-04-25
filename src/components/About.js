@@ -13,6 +13,7 @@ const AboutContainer = styled.div`
 
   @media (max-width: 768px) {
     overflow-y: auto;
+   
   }
 `;
 
@@ -25,6 +26,10 @@ const Header = styled.h1`
   display: inline-block;
   overflow: hidden;
   padding-left: 2px;
+  
+  @media (max-width: 768px) {
+    font-size: 55px;
+  }
 
   &::after {
     content: '';

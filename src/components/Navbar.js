@@ -25,6 +25,10 @@ const Logo = styled(Link)`
     height: 3rem;
     width: auto;
   }
+
+  @media (max-width: 768px) {
+    margin-left: 20px;
+  }
 `;
 
 const NavbarLinks = styled.div`
@@ -33,12 +37,9 @@ const NavbarLinks = styled.div`
   color: white;
   margin-right: 100px;
 
-  @media (max-width: 1200px) {
-    gap: 1.5rem;
-  }
-
-  @media (max-width: 992px) {
+  @media (max-width: 768px) {
     gap: 1rem;
+    margin-right: 20px;
   }
 `;
 
@@ -69,6 +70,5 @@ const Navbar = () => {
     </NavbarContainer>
   );
 };
-
 
 export default Navbar;

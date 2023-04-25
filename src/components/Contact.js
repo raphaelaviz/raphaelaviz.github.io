@@ -3,6 +3,8 @@ import styled from 'styled-components';
 import emailjs from "@emailjs/browser";
 import logoBackground from "../assets/logoBackground.png";
 import { useRef, useState } from "react";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
+
 
 const ContactContainer = styled.div`
   background-color: #212121;
@@ -20,6 +22,9 @@ const ContactContainer = styled.div`
     background-size: 60%;
     opacity: 0.05;
     
+    @media (max-width: 768px) {
+    background-size: cover;
+  }
   }
 `;
 
@@ -32,6 +37,10 @@ const Header = styled.h1`
   display: inline-block;
   overflow: hidden;
   padding-left: 2px;
+
+  @media (max-width: 768px) {
+    font-size: 50px;
+  }
 
   &::after {
     content: '';
@@ -131,6 +140,57 @@ const SuccessMessage = styled.p`
   margin-top: 10px;
 `;
 
+const IconLinksContainer = styled.div`
+  display: none;
+
+  @media (max-width: 768px) {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding-bottom: 70px;
+  }
+`;
+
+const IconLink = styled.a`
+  display: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  position: relative;
+  overflow: hidden;
+
+  @media (max-width: 768px) {
+    display: flex;
+  }
+  `;
+
+const LinkedInIcon = styled(FaLinkedin)`
+  display: none;
+  height: 30px;
+  width: 30px;
+  color: white;
+
+  @media (max-width: 768px) {
+    display: flex;
+  }
+`;
+
+const GithubIcon = styled(FaGithub)`
+  display: none;
+  height: 30px;
+  width: 30px;
+  color: white;
+  transition: color 0.3s ease-in-out;
+
+  @media (max-width: 768px) {
+    display: flex;
+  }
+`;
+
 const Contact = () => {
   const ref = useRef();
   const [success, setSuccess] = useState(null);
@@ -175,6 +235,14 @@ const Contact = () => {
             {success &&
               "Your message has been sent. I'll get back to you as soon as possible."}
             </SuccessMessage>
+            <IconLinksContainer>
+          <IconLink href="https://www.linkedin.com/in/raphael-aviz/" target="_blank" rel="noopener noreferrer">
+            <LinkedInIcon />
+          </IconLink>
+          <IconLink href="https://github.com/raphaelaviz" target="_blank" rel="noopener noreferrer">
+            <GithubIcon />
+          </IconLink>
+        </IconLinksContainer>
           </FormContainer>
       </ContentContainer>
     </ContactContainer>

@@ -150,7 +150,7 @@ const CardContent = styled.div`
 const CardTitle = styled.h3`
   font-family: 'Lato', sans-serif;
   color: black;
-  font-size: 1.8vw; 
+  font-size: 1.7rem; 
   white-space: nowrap;
   z-index: 2;
   margin: 0;
@@ -164,7 +164,7 @@ const CardTitle = styled.h3`
 
 const CardDescription = styled.p`
   font-family: 'Lato', sans-serif;
-  font-size: 1.3vw;
+  font-size: 1.2rem;
   color: black;
 
   @media (max-width: 768px) {
@@ -177,6 +177,8 @@ const CardDescription = styled.p`
 const CardLinks = styled.div`
   display: flex;
   justify-content: space-between;
+  margin-top: auto;
+
 `;
 
 const CardLink = styled.a`

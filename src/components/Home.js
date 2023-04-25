@@ -22,6 +22,10 @@ const HomeContainer = styled.div`
     background-size: 60%;
     opacity: 0.05;
     z-index: 0;
+
+    @media (max-width: 768px) {
+    background-size: cover;
+  }
   }
 `;
 
