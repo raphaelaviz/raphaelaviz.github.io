@@ -118,7 +118,7 @@ const Home = () => {
       <Navbar />
       <HomeContent>
         <TextContainer>
-          <Presentation>Raphael Avi</Presentation>
+          <Presentation>Raphael Aviz</Presentation>
           <JobPresentation>Front-end Developer</JobPresentation>
         </TextContainer>
         <Quote>
