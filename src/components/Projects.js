@@ -169,7 +169,7 @@ const CardDescription = styled.p`
 
   @media (max-width: 768px) {
     color: white;
-    font-size: 5vw;
+    font-size: 1rem;
   }
 
 `;
@@ -212,8 +212,8 @@ const Projects = () => {
                   <CardLink href={project.linkGithub} target="_blank" rel="noreferrer">
                     GitHub Repo
                   </CardLink>
-                  <CardLink href={project.linkVideo} target="_blank" rel="noreferrer">
-                    Video Preview
+                  <CardLink href={project.page} target="_blank" rel="noreferrer">
+                    Project Page
                   </CardLink>
                 </CardLinks>
               </CardContent>

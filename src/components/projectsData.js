@@ -27,7 +27,7 @@ const projectsData = [
             </>
           ),
         linkGithub: 'https://github.com/rapharrrr/c.y.t',
-        linkVideo: 'lllalalla'
+        page: 'https://raphaelaviz.github.io/c.y.t/'
     },
     {
         title: 'Shopping Cart App',
@@ -48,8 +48,8 @@ const projectsData = [
             </p>
           </>
         ),
-        linkGithub: 'lalalalla',
-        linkVideo: 'lllalalla'
+        linkGithub: 'https://github.com/raphaelaviz/ShoppingCart',
+        page: 'https://www.youtube.com/watch?v=YoZFSQzn3t4'
     },
     {
         title: 'Trading Journal Dashboard',
@@ -70,8 +70,8 @@ const projectsData = [
             </p>
           </>
         ),
-        linkGithub: 'lalalalla',
-        linkVideo: 'lllalalla'
+        linkGithub: 'https://github.com/raphaelaviz/TradingJournal',
+        page: 'https://raphaelaviz.github.io/TradingJournal/'
     },
     {
         title: 'Pagination Exercise',
@@ -89,8 +89,8 @@ const projectsData = [
             </p>
           </>
         ),
-        linkGithub: 'lalalalla',
-        linkVideo: 'lllalalla'
+        linkGithub: 'https://github.com/raphaelaviz/PaginationExercise',
+        page: 'https://raphaelaviz.github.io/PaginationExercise/'
     },
 ]
 
