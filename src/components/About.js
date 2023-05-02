@@ -218,7 +218,7 @@ const About = () => {
             <SkillColumn>
               <SkillItem>► Core Java</SkillItem>
               <SkillItem>► Node.js</SkillItem>
-              <SkillItem>► TypeScript (a little)</SkillItem>
+              <SkillItem>► TypeScript</SkillItem>
             </SkillColumn>
             <SkillColumn>
               <SkillItem>► Redux</SkillItem>
