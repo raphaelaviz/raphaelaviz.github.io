@@ -137,8 +137,8 @@ const SkillsContainer = styled.div`
   font-family: 'Lato', sans-serif;
   font-weight: lighter;
   margin-top: 15%;
-  padding-left: 13%;
   box-sizing: border-box;
+  justify-content: space-around; 
 
   @media (max-width: 768px) {
     width: 95%;
@@ -153,7 +153,6 @@ const SkillsContainer = styled.div`
 const SkillColumn = styled.div`
   display: flex;
   flex-direction: column;
-  margin-right: 1rem;
 
   @media (max-width: 768px) {
     margin-bottom: 1rem;
